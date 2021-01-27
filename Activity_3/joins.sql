@@ -49,22 +49,22 @@ INSERT INTO Classrooms
 
 -- Combine two tables using...
 -- INNER JOIN
-SELECT id, first_name, last_name, section
-    FROM Students s
-    INNER JOIN Classrooms c
-    ON s.id = c.id;
+SELECT Classrooms.id, first_name, last_name, section
+    FROM Students
+    INNER JOIN Classrooms
+    ON Students.id = Classrooms.id;
 
 -- LEFT JOIN
-SELECT id, first_name, last_name, section
-    FROM Students s
-    LEFT JOIN Classrooms c
-    ON s.id = c.id;
+SELECT Classrooms.id, first_name, last_name, section
+    FROM Students
+    LEFT JOIN Classrooms
+    ON Students.id = Classrooms.id;
 
 -- RIGHT JOIN
-SELECT id, first_name, last_name, section
-    FROM Students s
-    RIGHT JOIN Classrooms c
-    ON s.id = c.id;
+SELECT Classrooms.id, first_name, last_name, section
+    FROM Students
+    RIGHT JOIN Classrooms
+    ON Students.id = Classrooms.id;
 
 -- FULL JOIN
 SELECT id, first_name, last_name, section
