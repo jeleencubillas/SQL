@@ -1,10 +1,10 @@
 -- Use table from previous lesson
 CREATE TABLE Students (
-	id INT(3) PRIMARY KEY,
+	id INT PRIMARY KEY,
     first_name VARCHAR(20),
     middle_name VARCHAR(20),
     last_name VARCHAR(20),
-    age INT(2),
+    age INT,
     location VARCHAR(20)
     );
     
@@ -27,8 +27,8 @@ DELETE FROM Students
 
 -- Create new table
 CREATE TABLE Classrooms (
-	id INT(3) PRIMARY KEY,
-    student_id INT(3),
+	id INT PRIMARY KEY,
+    student_id INT,
     section VARCHAR(20)
     );
 
